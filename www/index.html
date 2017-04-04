@@ -5,6 +5,9 @@
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/themes/Natasza.min.css" />
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 	</head>
@@ -16,29 +19,32 @@
 			<h1>Display pictures</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<ul>
-                  <li><a href="#my1Popup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Masuria</a>
-
-                        <div data-role="popup" id="my1Popup">
-                            <img src="mazury_kraina.jpg" alt="Masuria" style="width:304px;height:228px;">
-                        </div>
-                  </li>
-                  <li><a href="#2myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pomerania</a>
-
-                        <div data-role="popup" id="2myPopup">
-                            <img src="pomerania.jpg" alt="Pomerania" style="width:304px;height:228px;">
-                        </div>
-                  </li>
-                  <li><a href="#my3Popup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">The Tatra Mountains</a>
-
-                        <div data-role="popup" id="my3Popup">
-                            <img src="tatry.jpg" alt="The Tatra Mountains" style="width:304px;height:228px;">
-                        </div>
-                  </li>
-            </ul>
+			  <a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" >Aprove</a>
+              <a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" >Reject</a>
+              <label for="text-basic">Name and surname:</label>
+              <input type="text" name="text-basic" id="text-basic" value="">
+              <label for="text-basic">Data:</label>
+               <input type="text" name="text-basic" id="text-basic" value="">
+              
+              <fieldset data-role="controlgroup">
+                    <legend>Product:</legend>
+                    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+                    <label for="checkbox-1a">Piwo</label>
+                    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+                    <label for="checkbox-2a">Wino</label>
+                    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+                    <label for="checkbox-3a">Wódka</label>
+                    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+                    <label for="checkbox-4a">Tequila</label>
+                    <input type="checkbox" name="checkbox-5a" id="checkbox-5a">
+                    <label for="checkbox-5a">wszystko</label>
+                </fieldset>
+              
+              <label for="textarea">Quantity:</label>
+              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
               
 		  </div>
-		  <div data-role="footer" data-position="fixed">
+		  <div data-role="footer" data-position="fixed">s
 			<h1>(c) Natalia Lewczuk</h1>
 		  </div> 
 		</div> 
